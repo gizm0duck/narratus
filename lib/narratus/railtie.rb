@@ -17,7 +17,7 @@ module Narratus
 
         Narratus.configure do |config|
           config.key = app.config.narratus[:key] || self.app_name
-          config.logger = app.config.narratus[:log_instance]
+          config.logger = app.config.narratus[:logger]
           config.ignored_notification_names = app.config.narratus[:ignored_notification_names]
           config.ignored_database_actions = app.config.narratus[:ignored_database_actions]
           config.publish = app.config.narratus[:publish]
